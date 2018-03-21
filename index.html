@@ -13,8 +13,8 @@
 
 <link href="assets/css/vendor.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>
 
-<body>
-	
+<body data-module="Animation">
+
 <!-- HEADER -->
 <header class="header" data-module="HeaderEvent">
 	<nav class="nav">
@@ -31,11 +31,11 @@
 				<span class="nav__close"></span>
 				<img class="nav__logo" src="./assets/images/logo_black.png" alt="logo">
 				<ul class="nav__list">
-					<li><a class="nav__item" href="javascript: void(0)">Home</a></li>
-					<li><a class="nav__item" href="javascript: void(0)">About Me</a></li>
-					<li><a class="nav__item" href="javascript: void(0)">Curriculum Vitae ( CV )</a></li>
-					<li><a class="nav__item" href="javascript: void(0)">Porfolio</a></li>
-					<li><a class="nav__item last-item" href="javascript: void(0)">Contact</a></li>
+					<li><a data-scroll="home" class="nav__item" href="javascript: void(0)">Home</a></li>
+					<li><a data-scroll="about" class="nav__item" href="javascript: void(0)">About Me</a></li>
+					<li><a data-scroll="porfolio" class="nav__item" href="javascript: void(0)">Porfolio</a></li>
+					<li><a data-scroll="cv" class="nav__item" href="javascript: void(0)">Curriculum Vitae ( CV )</a></li>
+					<li><a data-scroll="contact" class="nav__item last-item" href="javascript: void(0)">Contact</a></li>
 				</ul>
 				<img class="nav__avatar" src="./assets/images/avatar.jpg" alt="avatar">
 				<p class="nav__avatar-text text-center"><b>ĐOÀN LÊ QUỐC HUY</b></p>
@@ -44,8 +44,8 @@
 				<ul class="nav__list">
 					<li><a data-scroll="home" class="nav__item" href="javascript: void(0)">HOME</a></li>
 					<li><a data-scroll="about" class="nav__item" href="javascript: void(0)">ABOUT ME</a></li>
-					<li><a data-scroll="cv" class="nav__item" href="javascript: void(0)">CV</a></li>
 					<li><a data-scroll="porfolio" class="nav__item" href="javascript: void(0)">PORFOLIO</a></li>
+					<li><a data-scroll="cv" class="nav__item" href="javascript: void(0)">CV</a></li>
 					<li><a data-scroll="contact" class="nav__item" href="javascript: void(0)">CONTACT</a></li>
 				</ul>
 			</nav>
@@ -56,7 +56,7 @@
 		<div class="hero__item">
 			<img class="hero__image hide-on-desktop" src="assets/images/m_hero.jpg" alt="hero">
 			<img class="hero__image hide-on-mobile" src="assets/images/d_hero.jpg" alt="hero">
-			<h2 class="hero__text">I CAN ACCEPT FAILURE, EVERYONE FAILS AT SOMETHING. BUT I CAN'T ACCEPT NOT TRYING<br><span class="hero__text--small">By Michael Jordan</span></h2>
+			<h2 class="hero__text ani-hero-text">I CAN ACCEPT FAILURE, EVERYONE FAILS AT SOMETHING. BUT I CAN'T ACCEPT NOT TRYING<br><span class="hero__text--small">By Michael Jordan</span></h2>
 		</div>
 		<div class="hero__item">
 			<img class="hero__image hide-on-desktop" src="assets/images/m_hero-2.jpg" alt="hero">
@@ -183,14 +183,14 @@ Tôi nghĩ rằng công việc thiết kế cũng giống như việc sắp xế
 
 <!-- FOOTER -->
 <footer>
-	<section class="section-contact">
+	<section id="contact" class="section-contact">
 		<h2 class="section__title text-center">CONTACT ME</h2>
 		<div class="section__content">
 			<div class="contact">
 				<div class="contact__item">
 					<a href="https://www.facebook.com/huy.doan.9825">
 						<img src="./assets/images/icons/icon-fb.png" alt="icon">
-						<p class="text text-center">facebook.com/huy.doan.9825</p>
+						<p class="text text-center">fb.com/huy.doan.9825</p>
 					</a>
 				</div>
 				<div class="contact__item">
